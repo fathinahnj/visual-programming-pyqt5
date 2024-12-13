@@ -16,6 +16,8 @@ class MyWindow(QWidget):
     layout.addWidget(btn4, 5, Qt.AlignBottom)
     self.setLayout(layout) # akses QWidget (self), setLayout sesuai dengan "layout"
     
+    # Perbedaan antara QH dan QV box alignment adalah di QH ada "stretch" dan "alignment"
+    
     # kalau pakai MyWindow(QMainWindow), maka harus menggunakan set central widget
     # widget = QWidget()
     # widget.setLayout(layout)
