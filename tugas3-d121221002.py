@@ -9,10 +9,10 @@ class MyWindow(QWidget):
     btn2 = QPushButton("button 2")
     btn3 = QPushButton("button 3")
     btn4 = QPushButton("button 4")
-    layout.addWidget(btn1)
-    layout.addWidget(btn2)
-    layout.addWidget(btn3)
-    layout.addWidget(btn4)
+    layout.addWidget(btn1, 1)
+    layout.addWidget(btn2, 2)
+    layout.addWidget(btn3, 2)
+    layout.addWidget(btn4, 2)
     self.setLayout(layout) # akses QWidget (self), setLayout sesuai dengan "layout"
     
     # kalau pakai MyWindow(QMainWindow), maka harus menggunakan set central widget
