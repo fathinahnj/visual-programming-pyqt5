@@ -15,6 +15,11 @@ class MyWindow(QWidget):
     layout.addWidget(btn4)
     self.setLayout(layout) # akses QWidget (self), setLayout sesuai dengan "layout"
     
+    # kalau pakai MyWindow(QMainWindow), maka harus menggunakan set central widget
+    # widget = QWidget()
+    # widget.setLayout(layout)
+    # self.setCentralWidget(widget)
+    
     
 app = QApplication([])
 window = MyWindow()
