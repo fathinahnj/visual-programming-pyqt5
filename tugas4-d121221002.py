@@ -6,14 +6,14 @@ class MyWindow(QWidget):
   def __init__(self):
     super().__init__() 
     layout = QGridLayout()
-    btn1 = QPushButton("button 1")
-    btn2 = QPushButton("button 2")
-    btn3 = QPushButton("button 3")
-    btn4 = QPushButton("button 4")
-    layout.addWidget(btn1, 1, Qt.AlignTop)
-    layout.addWidget(btn2, 2)
-    layout.addWidget(btn3, 2)
-    layout.addWidget(btn4, 5, Qt.AlignBottom)
+    btn1 = QPushButton("baris 0 kolom 0")
+    btn2 = QPushButton("baris 0 kolom 1")
+    btn3 = QPushButton("baris 1 kolom 0")
+    btn4 = QPushButton("baris 1 kolom 1")
+    layout.addWidget(btn1, 0, 0)
+    layout.addWidget(btn2, 0, 1)
+    layout.addWidget(btn3, 1, 0)
+    layout.addWidget(btn4, 1, 1)
     self.setLayout(layout) # akses QWidget (self), setLayout sesuai dengan "layout"
     
     # Perbedaan antara QH dan QV box alignment adalah di QH ada "stretch" dan "alignment"
