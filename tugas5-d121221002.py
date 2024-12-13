@@ -9,6 +9,10 @@ class MyWindow(QMainWindow):
     layout.addRow("Nama", QLineEdit())
     layout.addRow("Email", QLineEdit())
     
+    label = QLabel("Alamat")
+    Qedit = QLineEdit()
+    layout.addRow(label, Qedit)
+    
     # kalau pakai MyWindow(QMainWindow), maka harus menggunakan set central widget
     widget = QWidget()
     widget.setLayout(layout)
